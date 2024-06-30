@@ -3,10 +3,11 @@
         "module": "CommonJS",
         "moduleResolution": "Node",
         "strict": true,
-        "outDir": "./build",
+        "outDir": "./dist",
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
-        "esModuleInterop": true
+        "esModuleInterop": true,
+        "noImplicitAny": false
     },
-    "include": ["src/**/*", "src/data.ts", "src/index.ts"]
+    "include": ["src/**/*", "src/data.ts", "src/server.ts"]
 }
