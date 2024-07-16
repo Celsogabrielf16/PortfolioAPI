@@ -1,6 +1,6 @@
 import { Schema, model } from "mongoose";
 
-export interface Property {
+export interface IProperty {
     id: string;
     street: string;
     number: number;
@@ -23,7 +23,7 @@ export interface Property {
     tags: string[];
 }
 
-export const PropertySchema = new Schema<Property> ({
+export const PropertySchema = new Schema<IProperty> ({
     street: { type: String, required: true },
     number: { type: Number, required: true },
     neighborhood: { type: String, required: true },
@@ -51,4 +51,4 @@ export const PropertySchema = new Schema<Property> ({
     }, timestamps: true
 });
 
-export const PropertyModel = model<Property>('property', PropertySchema);
+export const PropertyModel = model<IProperty>('property', PropertySchema);

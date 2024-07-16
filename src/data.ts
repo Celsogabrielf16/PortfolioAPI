@@ -1,6 +1,8 @@
-export const propertiesData: any[] = [
+import { IProperty } from "./models/property.model";
+
+export const propertiesData: IProperty[] = [
   {
-    id: 1,
+    id: '1',
     street: 'Rua da Primavera',
     number: 123,
     neighborhood: 'Jardim Botânico',
@@ -22,7 +24,7 @@ export const propertiesData: any[] = [
     tags: ['Casas Modernas', 'Na praia'],
   },
   {
-    id: 2,
+    id: '2',
     title: 'Casa Térrea com Jardim Exuberante',
     price: 200,
     city: 'Belo Horizonte',
@@ -44,7 +46,7 @@ export const propertiesData: any[] = [
     tags: ['Casas Modernas', 'Na praia'],
   },
   {
-    id: 3,
+    id: '3',
     title: 'Cobertura à Beira-mar com Terraço Privativo',
     price: 300,
     city: 'Porto Alegre',
@@ -66,7 +68,7 @@ export const propertiesData: any[] = [
     tags: ['Acampamento', 'No Interior'],
   },
   {
-    id: 4,
+    id: '4',
     title: 'Aconchegante Acampamento de Um Quarto no Centro',
     price: 120,
     city: 'Fortaleza',
@@ -88,7 +90,7 @@ export const propertiesData: any[] = [
     tags: ['Acampamento', 'No Interior'],
   },
   {
-    id: 5,
+    id: '5',
     title: 'Chalé Rústico com Lareira',
     price: 180,
     city: 'Curitiba',
@@ -110,7 +112,7 @@ export const propertiesData: any[] = [
     tags: ['Com Piscina', 'Nas Montanhas'],
   },
   {
-    id: 6,
+    id: '6',
     title: 'Condomínio de Quatro Quartos com Design Sofisticado',
     price: 250,
     city: 'Recife',
@@ -132,7 +134,7 @@ export const propertiesData: any[] = [
     tags: ['Com Piscina', 'Nas Montanhas'],
   },
   {
-    id: 7,
+    id: '7',
     title: 'Sobrado Histórico Meticulosamente Restaurado',
     price: 90,
     city: 'Brasília',
@@ -154,7 +156,7 @@ export const propertiesData: any[] = [
     tags: ['Casas Modernas', 'Com Piscina'],
   },
   {
-    id: 8,
+    id: '8',
     title: 'Duplex Penthouse com Terraço e Vista Deslumbrante',
     price: 160,
     city: 'Florianópolis',
@@ -188,13 +190,13 @@ export const tags: any[] = [
 
 export const users: any[] = [
   {
-    id: 0,
+    id: '0',
     name: "Celso",
     email: "cp@gmail.com",
     password: "$2a$10$gw55KLfO1/MaMq30YKBqY.TDY9t2mTkg6MyM61Kw9oZ5qZTcZ9xmO"
   },
   {
-    id: 1,
+    id: '1',
     name: "Gabriel",
     email: "gfm@gmail.com",
     password: "$2a$10$v1bn8.rieF/Bap1eCJY5O.q8gXzAttnaqDocx2W1MHZ8wKppAJl5e"

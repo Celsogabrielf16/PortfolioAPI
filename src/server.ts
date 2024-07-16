@@ -3,11 +3,12 @@ import express from 'express';
 import cors from 'cors';
 import propertyRouter from './routers/property.router';
 import userRouter from './routers/user.router';
-import { databaseConnect } from './configs/database.config';
+import databaseConnect from './configs/database.config';
 
 dotenv.config();
 
 const server = express();
+
 server.use(express.json());
 
 server.use(cors({
@@ -20,8 +21,4 @@ server.use("/user", userRouter);
 
 databaseConnect();
 
-const port = 3000;
-
-server.listen(port, () => {
-    console.log(`Servidor rodando na porta http://localhost:${port}`)
-});
+server.listen('3000');

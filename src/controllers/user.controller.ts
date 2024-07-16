@@ -1,4 +1,3 @@
-import { User } from '../classes/User';
 import { Request, Response } from "express";
 import jwt from "jsonwebtoken";
 import bcrypt from 'bcryptjs';
@@ -6,7 +5,7 @@ import bcrypt from 'bcryptjs';
 import { users } from "../data";
 import { IUser, UserModel } from "../models/user.model";
 
-function generateTokenResponse(user: User) {
+function generateTokenResponse(user: IUser) {
     const token = jwt.sign({
         email: user.email
     }, "SomeRandomText", {
@@ -57,7 +56,7 @@ export class UserController {
 
         const passwordHash = await bcrypt.hash(password, 10);
 
-        const newUser: User = {
+        const newUser: IUser = {
             id: '',
             name,
             email: email.toLowerCase(),
