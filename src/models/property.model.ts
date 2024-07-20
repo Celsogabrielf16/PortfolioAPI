@@ -19,7 +19,7 @@ export interface IProperty {
     description: string;
     contactNumber: string;
     email: string;
-    url: string;
+    url: string[];
     tags: string[];
 }
 
@@ -41,7 +41,7 @@ export const PropertySchema = new Schema<IProperty> ({
     description: { type: String, required: true },
     contactNumber: { type: String, required: true },
     email: { type: String, required: true },
-    url: { type: String, required: true },
+    url: { type: [String], required: true },
     tags: { type: [String] }
 }, {
     toJSON: {
