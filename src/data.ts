@@ -27,7 +27,7 @@ export const propertiesData: IProperty[] = [
       'assets/properties/property0104.webp',
       'assets/properties/property0105.webp',
     ],
-    tags: ['Acampamento', 'No interior'],
+    tags: ['Acampamento', 'No Interior'],
   },
   {
     id: '2',
@@ -45,7 +45,7 @@ export const propertiesData: IProperty[] = [
     externalArea: 250,
     price: 290,
     title: 'Vista para o mar e dunas na montanha em Garopaba',
-    description: 'Local tranquilo e privativo em meio a natureza, com bosque ao lado e barulho de cachoeira. Vista para o mar e dunas na Costa do Macacu. Estudio completo e charmoso com estacioamento, isolado em meio a natureza exuberante, a 2 km (5 minutos) de uma praia paradisíaca e deserta, dunas que permitem praticar sandboard, cachoeiras e montanhas com trilhas.',
+    description: 'Local tranquilo e privativo em meio a natureza, com bosque ao lado e barulho de cachoeira. Vista para o mar e dunas na Costa do Macacu. Estudio completo e charmoso com estacioamento, isolado em meio a natureza exuberante.',
     contactNumber: '015997426807',
     email: 'celsogabrielf@gmail.com',
     url: [
@@ -55,11 +55,11 @@ export const propertiesData: IProperty[] = [
       'assets/properties/property0204.webp',
       'assets/properties/property0205.webp',
     ],
-    tags: ['Acampamento', 'No interior'],
+    tags: ['Acampamento', 'No Interior'],
   },
   {
     id: '3',
-    street: '',
+    street: 'Roberto Silveira',
     number: 12,
     neighborhood: 'Ponta Grossa',
     city: 'Paraty',
@@ -83,7 +83,7 @@ export const propertiesData: IProperty[] = [
       'assets/properties/property0304.webp',
       'assets/properties/property0305.webp',
     ],
-    tags: ['Na Praia', 'No interior'],
+    tags: ['Na Praia', 'No Interior'],
   },
   {
     id: '4',
@@ -91,7 +91,7 @@ export const propertiesData: IProperty[] = [
     number: 69,
     neighborhood: 'Long Bay Village',
     city: 'Anguilla',
-    uf: '',
+    uf: 'Território Ultramarino',
     country: 'Inglaterra',
     bedroom: 9,
     bathroom: 10,
@@ -111,7 +111,7 @@ export const propertiesData: IProperty[] = [
       'assets/properties/property0404.webp',
       'assets/properties/property0405.webp',
     ],
-    tags: ['Na praia', 'Com piscina'],
+    tags: ['Na Praia', 'Com Piscina'],
   },
   {
     id: '5',
@@ -139,7 +139,7 @@ export const propertiesData: IProperty[] = [
       'assets/properties/property0504.webp',
       'assets/properties/property0505.webp',
     ],
-    tags: ['Na praia', 'Com piscina', 'Casas modernas'],
+    tags: ['Na Praia', 'Com Piscina', 'Casas Modernas'],
   },
   {
     id: '6',
@@ -167,7 +167,7 @@ export const propertiesData: IProperty[] = [
       'assets/properties/property0604.webp',
       'assets/properties/property0605.webp',
     ],
-    tags: ['Na praia', 'Com piscina', 'Casas modernas'],
+    tags: ['Na Praia', 'Com Piscina', 'Casas Modernas'],
   },
   {
     id: '7',
@@ -185,7 +185,7 @@ export const propertiesData: IProperty[] = [
     externalArea: 470,
     price: 3716,
     title: 'Three Sisters Lookout',
-    description: 'Aproveite as majestosas Montanhas Rochosas e o ambiente clássico de Breckenridge de uma forma novinha em folha no Three Sisters Lookout. Situada na Montanha do Carrinho, esta vila de luxo recém-construída é um retiro privado que tem vista para a cidade e para as encostas da Cordilheira das Dez Milhas - uma vista deslumbrante em qualquer época do ano.',
+    description: 'Aproveite as majestosas Montanhas Rochosas e o ambiente clássico de Breckenridge de uma forma novinha em folha no Three Sisters Lookout.',
     contactNumber: '015997426807',
     email: 'celsogabrielf@gmail.com',
     url: [
@@ -195,7 +195,7 @@ export const propertiesData: IProperty[] = [
       'assets/properties/property0704.webp',
       'assets/properties/property0705.webp',
     ],
-    tags: ['Acampamento', 'No interior', 'Nas montanhas'],
+    tags: ['Acampamento', 'No Interior', 'Nas Montanhas'],
   },
   {
     id: '8',
@@ -223,12 +223,12 @@ export const propertiesData: IProperty[] = [
       'assets/properties/property0804.webp',
       'assets/properties/property0805.webp',
     ],
-    tags: ['Acampamento', 'No interior', 'Nas montanhas'],
+    tags: ['Acampamento', 'No Interior', 'Nas Montanhas'],
   },
 ];
 
 export const tags: any[] = [
-  { name: 'Na praia', src: 'assets/icons/beach.jpg', active: false },
+  { name: 'Na Praia', src: 'assets/icons/beach.jpg', active: false },
   { name: 'Acampamento', src: 'assets/icons/camping.jpg', active: false },
   { name: 'No Interior', src: 'assets/icons/countryHouse.jpg', active: false },
   { name: 'Casas Modernas', src: 'assets/icons/house.jpg', active: false },

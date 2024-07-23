@@ -19,8 +19,8 @@ router.get("/id/:idSearched", (req, res) => {
     PropertyController.getPropertyByID(req, res);
 })
 
-router.get("/city/:citySearched", (req, res) => {
-    PropertyController.getPropertiesByCity(req, res);
+router.get("/address/:addressSearched", (req, res) => {
+    PropertyController.getPropertiesByAddress(req, res);
 });
 
 router.get("/tag/:tagSearched", (req, res) => {
@@ -39,20 +39,20 @@ router.get("/numberOfBedrooms/:numberOfBedrooms", (req, res) => {
     PropertyController.getPropertiesByBedrooms(req, res);
 });
 
-router.get("/city/:citySearched/tag/:tagSearched", (req, res) => {
-    PropertyController.getPropertiesByCityAndTag(req, res);
+router.get("/address/:addressSearched/tag/:tagSearched", (req, res) => {
+    PropertyController.getPropertiesByAddressAndTag(req, res);
 });
 
-router.get("/city/:citySearched/minimunPrice/:minimunPrice", (req, res) => {
-    PropertyController.getPropertiesByCityAndMinimunPrice(req, res);
+router.get("/address/:addressSearched/minimunPrice/:minimunPrice", (req, res) => {
+    PropertyController.getPropertiesByAddressAndMinimunPrice(req, res);
 });
 
-router.get("/city/:citySearched/maximunPrice/:maximunPrice", (req, res) => {
-    PropertyController.getPropertiesByCityAndMaximunPrice(req, res);
+router.get("/address/:addressSearched/maximunPrice/:maximunPrice", (req, res) => {
+    PropertyController.getPropertiesByAddressAndMaximunPrice(req, res);
 });
 
-router.get("/city/:citySearched/numberOfBedrooms/:numberOfBedrooms", (req, res) => {
-    PropertyController.getPropertiesByCityAndBedrooms(req, res);
+router.get("/address/:addressSearched/numberOfBedrooms/:numberOfBedrooms", (req, res) => {
+    PropertyController.getPropertiesByAddressAndBedrooms(req, res);
 });
 
 router.get("/tag/:tagSearched/minimunPrice/:minimunPrice", (req, res) => {
@@ -79,28 +79,28 @@ router.get("/maximunPrice/:maximunPrice/numberOfBedrooms/:numberOfBedrooms", (re
     PropertyController.getPropertiesByMaximunPriceAndBedrooms(req, res);
 });
 
-router.get("/city/:citySearched/tag/:tagSearched/minimunPrice/:minimunPrice", (req, res) => {
-    PropertyController.getPropertiesByCityTagAndMinimunPrice(req, res);
+router.get("/address/:addressSearched/tag/:tagSearched/minimunPrice/:minimunPrice", (req, res) => {
+    PropertyController.getPropertiesByAddressTagAndMinimunPrice(req, res);
 });
 
-router.get("/city/:citySearched/tag/:tagSearched/maximunPrice/:maximunPrice", (req, res) => {
-    PropertyController.getPropertiesByCityTagAndMaximunPrice(req, res);
+router.get("/address/:addressSearched/tag/:tagSearched/maximunPrice/:maximunPrice", (req, res) => {
+    PropertyController.getPropertiesByAddressTagAndMaximunPrice(req, res);
 });
 
-router.get("/city/:citySearched/tag/:tagSearched/numberOfBedrooms/:numberOfBedrooms", (req, res) => {
-    PropertyController.getPropertiesByCityTagAndBedrooms(req, res);
+router.get("/address/:addressSearched/tag/:tagSearched/numberOfBedrooms/:numberOfBedrooms", (req, res) => {
+    PropertyController.getPropertiesByAddressTagAndBedrooms(req, res);
 });
 
-router.get("/city/:citySearched/minimunPrice/:minimunPrice/maximunPrice/:maximunPrice", (req, res) => {
-    PropertyController.getPropertiesByCityAndPriceRange(req, res);
+router.get("/address/:addressSearched/minimunPrice/:minimunPrice/maximunPrice/:maximunPrice", (req, res) => {
+    PropertyController.getPropertiesByAddressAndPriceRange(req, res);
 });
 
-router.get("/city/:citySearched/minimunPrice/:minimunPrice/numberOfBedrooms/:numberOfBedrooms", (req, res) => {
-    PropertyController.getPropertiesByCityMinimunPriceAndBedrooms(req, res);
+router.get("/address/:addressSearched/minimunPrice/:minimunPrice/numberOfBedrooms/:numberOfBedrooms", (req, res) => {
+    PropertyController.getPropertiesByAddressMinimunPriceAndBedrooms(req, res);
 });
 
-router.get("/city/:citySearched/maximunPrice/:maximunPrice/numberOfBedrooms/:numberOfBedrooms", (req, res) => {
-    PropertyController.getPropertiesByCityMaximunPriceAndBedrooms(req, res);
+router.get("/address/:addressSearched/maximunPrice/:maximunPrice/numberOfBedrooms/:numberOfBedrooms", (req, res) => {
+    PropertyController.getPropertiesByAddressMaximunPriceAndBedrooms(req, res);
 });
 
 router.get("/tag/:tagSearched/minimunPrice/:minimunPrice/maximunPrice/:maximunPrice", (req, res) => {
@@ -119,28 +119,28 @@ router.get("/minimunPrice/:minimunPrice/maximunPrice/:maximunPrice/numberOfBedro
     PropertyController.getPropertiesByPriceRangeAndBedrooms(req, res);
 });
 
-router.get("/city/:citySearched/tag/:tagSearched/minimunPrice/:minimunPrice/maximunPrice/:maximunPrice", (req, res) => {
-    PropertyController.getPropertiesByCityTagAndPriceRange(req, res);
+router.get("/address/:addressSearched/tag/:tagSearched/minimunPrice/:minimunPrice/maximunPrice/:maximunPrice", (req, res) => {
+    PropertyController.getPropertiesByAddressTagAndPriceRange(req, res);
 });
 
-router.get("/city/:citySearched/tag/:tagSearched/minimunPrice/:minimunPrice/numberOfBedrooms/:numberOfBedrooms", (req, res) => {
-    PropertyController.getPropertiesByCityTagMinimunPriceAndBedrooms(req, res);
+router.get("/address/:addressSearched/tag/:tagSearched/minimunPrice/:minimunPrice/numberOfBedrooms/:numberOfBedrooms", (req, res) => {
+    PropertyController.getPropertiesByAddressTagMinimunPriceAndBedrooms(req, res);
 });
 
-router.get("/city/:citySearched/tag/:tagSearched/maximunPrice/:maximunPrice/numberOfBedrooms/:numberOfBedrooms", (req, res) => {
-    PropertyController.getPropertiesByCityTagMaximunPriceAndBedrooms(req, res);
+router.get("/address/:addressSearched/tag/:tagSearched/maximunPrice/:maximunPrice/numberOfBedrooms/:numberOfBedrooms", (req, res) => {
+    PropertyController.getPropertiesByAddressTagMaximunPriceAndBedrooms(req, res);
 });
 
-router.get("/city/:citySearched/minimunPrice/:minimunPrice/maximunPrice/:maximunPrice/numberOfBedrooms/:numberOfBedrooms", (req, res) => {
-    PropertyController.getPropertiesByCityPriceRangeAndBedrooms(req, res);
+router.get("/address/:addressSearched/minimunPrice/:minimunPrice/maximunPrice/:maximunPrice/numberOfBedrooms/:numberOfBedrooms", (req, res) => {
+    PropertyController.getPropertiesByAddressPriceRangeAndBedrooms(req, res);
 });
 
 router.get("/tag/:tagSearched/minimunPrice/:minimunPrice/maximunPrice/:maximunPrice/numberOfBedrooms/:numberOfBedrooms", (req, res) => {
     PropertyController.getPropertiesByTagPriceRangeAndBedrooms(req, res);
 });
 
-router.get("/city/:citySearched/tag/:tagSearched/minimunPrice/:minimunPrice/maximunPrice/:maximunPrice/numberOfBedrooms/:numberOfBedrooms", (req, res) => {
-    PropertyController.getPropertiesByCityTagPriceRangeAndBedrooms(req, res);
+router.get("/address/:addressSearched/tag/:tagSearched/minimunPrice/:minimunPrice/maximunPrice/:maximunPrice/numberOfBedrooms/:numberOfBedrooms", (req, res) => {
+    PropertyController.getPropertiesByAddressTagPriceRangeAndBedrooms(req, res);
 });
 
 export default router;
