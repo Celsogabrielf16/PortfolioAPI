@@ -7,6 +7,10 @@ router.get("/seed", (req, res) => {
     PropertyController.propertySeed(req, res);
 });
 
+router.post("/register", (req, res) => {
+    PropertyController.registerProperty(req, res);
+})
+
 router.get("/", (req, res) => {
     PropertyController.getAllProperties(req, res);
 });

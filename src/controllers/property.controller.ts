@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import { propertiesData, tags } from '../data';
-import { PropertyModel } from '../models/property.model';
+import { IProperty, PropertyModel } from '../models/property.model';
 
 export class PropertyController {
     public static async propertySeed(req: Request, res: Response) {
@@ -13,6 +13,42 @@ export class PropertyController {
 
         await PropertyModel.create(propertiesData);
         res.send("Seed is done!")
+    }
+
+    public static async registerProperty(req: Request, res: Response) {
+        console.log("🚀 Função registerProperty foi chamada!", req.body);
+
+        const { street, number, neighborhood, city, uf, country, bedroom, bathroom, kitchen, spot, area, externalArea, price, title, description, contactNumber, email, url, tags } = req.body;
+
+        if (!street || !number || !neighborhood || !city || !uf || !country || !bedroom || !bathroom || !kitchen || !spot || !area || !externalArea || !price || !title || !description || !contactNumber || !email || !url) {
+            return res.status(400).json({ message: "Campos obrigatórios estão faltando." });
+        }
+
+        const newProperty: IProperty = {
+            id: '',
+            street,
+            number,
+            neighborhood,
+            city,
+            uf,
+            country,
+            bedroom,
+            bathroom,
+            kitchen,
+            spot,
+            area,
+            externalArea,
+            price,
+            title,
+            description,
+            contactNumber,
+            email,
+            url,
+            tags
+        }
+
+        const dataProperty = await PropertyModel.create(newProperty);
+        return res.status(201).json({ message: "Propriedade cadastrada com sucesso!", property: dataProperty });
     }
 
     public static async getAllProperties(req: Request, res: Response) {
